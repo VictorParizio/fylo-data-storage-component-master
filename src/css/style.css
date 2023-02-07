@@ -40,16 +40,13 @@ body {
     border-radius: 10px;
     height: 48px;
     width: 48px;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    cursor: pointer;
 }
 
 input[type="file"]{
     opacity: 0%;
     height: 48px;
     width: 48px;
+    cursor: pointer;
 }
 
 .component-data-storage .card.icos .ico.document {
