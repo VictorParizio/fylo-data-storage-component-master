@@ -1,0 +1,118 @@
+body {
+    background: var(--VeryDark) url(../images/bg-desktop.png) no-repeat 0 100%;
+    background-size: 100vw 52vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.component-data-storage {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 30px;
+}
+
+.component-data-storage .card {
+    background: var(--Dark);
+    width: 350px;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.component-data-storage .card.ico {
+    border-top-right-radius: 80px;
+}
+
+.component-data-storage .card.ico>div {
+    display: flex;
+    padding-top: 28px;
+    gap: 16px;
+}
+
+.component-data-storage .card.ico .ico {
+    background-color: var(--VeryDark);
+    border-radius: 10px;
+    height: 48px;
+    width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.component-data-storage .card.storage {
+    color: var(--Pale);
+    position: relative;
+    width: 540px;
+}
+
+.component-data-storage .card.storage .floating {
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
+    padding: 12px 24px;
+    top: -45px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.component-data-storage .card.storage .triangulo {
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    bottom: -20px;
+    right: 0;
+
+    border-top: 10px solid hsl(0, 0%, 100%);
+    border-right: 10px solid hsl(0, 0%, 100%);
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid transparent;
+}
+
+.component-data-storage .card.storage .floating p {
+    color: var(--VeryDark);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.component-data-storage .card.storage .floating span {
+    color: var(--Grayish);
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+}
+
+.component-data-storage .card.storage .gb {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+}
+
+.component-data-storage .card.storage .slide {
+    width: 100%;
+    appearance: none;
+    background: linear-gradient(90deg, var(--gradient-1) 0%, var(--gradient-2) 80%, var(--VeryDark) 81%);
+    height: 20px;
+    transition: 450ms ease-in;
+    border-radius: 25px;
+    border: var(--VeryDark) solid 3px;
+    margin: 14px 0 8px;
+    cursor: pointer;
+}
+
+.component-data-storage .card.storage .slide::-webkit-slider-thumb {
+    cursor: pointer;
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    border: var(--gradient-2) solid 3px;
+}

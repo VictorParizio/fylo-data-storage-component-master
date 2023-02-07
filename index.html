@@ -16,24 +16,37 @@
 
 <body>
     <main>
-        <div>
-            <img src="src/images/logo.svg" alt="Logo Fylo">
-            <div>
-                <img src="src/images/icon-document.svg" alt="icon-document">
-                <img src="src/images/icon-folder.svg" alt="icon-folder">
-                <img src="src/images/icon-upload.svg" alt="icon-upload">
+        <section class="component-data-storage">
+            <div class="card ico">
+                <img src="src/images/logo.svg" alt="Logo Fylo">
+                <div>
+                    <div class="ico">
+                        <img src="src/images/icon-document.svg" alt="icon-document">
+                    </div>
+                    <div class="ico">
+                        <img src="src/images/icon-folder.svg" alt="icon-folder">
+                    </div>
+                    <div class="ico">
+                        <img src="src/images/icon-upload.svg" alt="icon-upload">
+                    </div>
+                </div>
             </div>
-        </div>
-        <div>
-            <p>You’ve used 815 GB of your storage</p>
-            <input type="range" name="" id="">
-            <p>185<span>GB Left</span></p>
-            <div>
-                <p>0 GB</p>
-                <p>1000 GB</p>
+            <div class="card storage">
+                <p>You’ve used <strong>815 GB</strong> of your storage</p>
+                <div>
+                    <input type="range" min="0" max="1000" value="815" class="slide" id="range" disabled>
+                </div>
+                <div class="floating">
+                    <p>185</p>
+                    <span>GB Left</span>
+                    <div class="triangulo"></div>
+                </div>
+                <div class="gb">
+                    <p>0 GB</p>
+                    <p>1000 GB</p>
+                </div>
             </div>
-        </div>
-
+        </section>
     </main>
 </body>
 
