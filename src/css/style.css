@@ -23,25 +23,45 @@ body {
     border-radius: 10px;
 }
 
-.component-data-storage .card.ico {
+.component-data-storage .card.icos {
     border-top-right-radius: 80px;
 }
 
-.component-data-storage .card.ico>div {
+.component-data-storage .card.icos>div {
     display: flex;
     padding-top: 28px;
     gap: 16px;
 }
 
-.component-data-storage .card.ico .ico {
+.component-data-storage .card.icos .ico {
     background-color: var(--VeryDark);
+    background-repeat: no-repeat;
+    background-position: center;
     border-radius: 10px;
     height: 48px;
     width: 48px;
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     cursor: pointer;
+}
+
+input[type="file"]{
+    opacity: 0%;
+    height: 48px;
+    width: 48px;
+}
+
+.component-data-storage .card.icos .ico.document {
+    background-image: url(../images/icon-document.svg);
+}
+
+.component-data-storage .card.icos .ico.folder {
+    background-image: url(../images/icon-folder.svg);
+}
+
+.component-data-storage .card.icos .ico.upload {
+    background-image: url(../images/icon-upload.svg);
 }
 
 .component-data-storage .card.storage {
